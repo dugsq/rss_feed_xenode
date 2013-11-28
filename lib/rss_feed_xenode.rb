@@ -36,7 +36,7 @@ require 'feedzirra'
 require 'googl'
 
 class RSSFeedXenode
-  include XenoCore::NodeBase
+  include XenoCore::XenodeBase
   
   def startup
     mctx = "#{self.class}.#{__method__} - [#{@xenode_id}]"
