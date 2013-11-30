@@ -1,6 +1,8 @@
 RSS Feed Xenode
 ===============
 
+Note: you will need the Xenograte Community Toolkit (XCT) to run this Xenode. Refer to the XCT repo [https://github.com/Nodally/xenograte-xct](https://github.com/Nodally/xenograte-xct) for more information.
+
 **RSS Feed Xenode** fetches a specific RSS Feed as defined by the user. It leverages the "Feedzirra" RubyGem to check for an updated feed from a specified RSS Feed URL, parse it and passes the parsed RSS Feed to its children. If the child Xenode is specifically a SMS Sender Xenode, the RSS Feed Xenode contains logic to pre-format the RSS Feed content to send a brief description and a shortened URL to the SMS Sender. It uses the "googl" Google URL shortener RubyGem to creat the shortened URL for a SMS Sender. 
 
 ###Configuration file options:###
